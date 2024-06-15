@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Importancia de las Apps que se ejecutan desde el servidor</title>
-    <link rel="stylesheet" href="ESTILOCSS.css">
+    <link rel="stylesheet" href="estilo.css">
 
 </head>
 <!--Inicia el cuerpo del programa-->
@@ -312,7 +312,7 @@ function mostrarFrase() {
             <p></p>
           <p2> Las redes también pueden actuar como amplificadores de malestar y riesgos, pero ofrecen ventajas como apoyo social y herramientas de salud mental. Se necesita regulación y moderación, especialmente en cerebros inmaduros. El entorno familiar y escolar también influye en la salud mental de los adolescentes.
                  <!--Se agrega una imagen-->
-            </p2> <img src="https://medicable.com.mx/AdminMedicable/Pagina/Articulo/Index/Img/947/Adiccion_Datos.png"width="400px">
+            </p2> <img src="https://estrategiaenelaula.sep.gob.mx/storage/recursos/2023/04/eJV6EhLFQr-OTRAS.png"width="400px">
     </section>
 </div>
     <section id="Analisis">
@@ -477,17 +477,23 @@ Las adicciones más comunes entre los adolescentes en México incluyen:
 
 
 
-
 <button onclick="mostrarImagen()">Mostrar Imagen</button>
-<img id="imagen" src="" alt="Imagen aleatoria">
+<img id="imagen" src="" alt="Imagen aleatoria" width="200px">
 
 <script>
-const imagenes = [
-"https://medicable.com.mx/AdminMedicable/Pagina/Articulo/Index/Img/947/Adiccion_Datos.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTia4W7INVIgJ2AMid_lWDL12hW7mOTy7ZVqQ&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1G65HptSkQSV27YbHtWo9mxVSTklTyEvSA&s",
-    "https://www.brainandlife.org/siteassets/current-issue/2023/februarymarch/mental-health-brain-main.jpg"
+    const imagenes = [
+        "https://w7.pngwing.com/pngs/14/1016/png-transparent-mental-disorder-world-mental-health-day-mental-illness-awareness-week-brain-exercise-medicine-awareness-mental-health-thumbnail.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAJ7iTnLlnJCJtmSGwF-zWAIgCyueCL6w3g&s",
+    "https://cdn-icons-png.flaticon.com/512/3998/3998035.png",
+    "https://ouch-cdn2.icons8.com/1nTK765cdh1Au3MdEJGcaE6uxU4VIOlf9FiF_BsZjJM/rs:fit:456:456/extend:true/wm:1:re:0:0:0.8/wmid:ouch/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMTk3/L2Y1N2U2OWYzLTY4/NzktNGViZi1iYmM5/LWUyMWM1MDhmZmMw/OC5zdmc.png"
 ]
+;
+
+    function mostrarImagen() {
+        const imgElement = document.getElementById('imagen');
+        const randomIndex = Math.floor(Math.random() * imagenes.length);
+        imgElement.src = imagenes[randomIndex];
+    }
 </script>
 
 <div class="box">
